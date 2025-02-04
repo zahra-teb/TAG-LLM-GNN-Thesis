@@ -1,19 +1,27 @@
 from together import Together
-from utils.load_data import get_dataset
-from prompts import ZERO_SHOT_BOOKS_PROMPT
+from utils.load_data import get_products
+from prompts import ZERO_SHOT_PRODUCTS_PROMPT
 import os
 import json
 from tqdm import tqdm
+import yaml
 
-client = Together(api_key="3e**************************************************************")
+# Load API key from YAML file
+def load_api_key(config_path="/home/ahmadi/zahra/thesis_stuff/TAG-LLM-GNN-Thesis/config.yaml"):
+    with open(config_path, "r") as file:
+        config = yaml.safe_load(file)
+    return config["together"]["api_key"]
 
-def generate_pred_conf_explanations(data, output_dir="../data/llm_responses"):
-    # Create the output directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
+# Initialize Together client
+api_key = load_api_key()
+client = Together(api_key=api_key)
+
+def generate_pred_conf_explanations(data, texts, output_path="../data/llm_responses_prods_sample.json"):
+    results = {}
 
     # Initialize tqdm progress bar
-    for i, node_text_attr in enumerate(tqdm(data.text_nodes, desc="Processing nodes")):
-        prompt = ZERO_SHOT_BOOKS_PROMPT.format(description=node_text_attr)
+    for node_id, node_text_attr in tqdm(zip(data.n_id, texts), desc="Processing nodes", total=len(data.n_id)):
+        prompt = ZERO_SHOT_PRODUCTS_PROMPT.format(description=node_text_attr)
         response = client.chat.completions.create(
             model="meta-llama/Llama-3.3-70B-Instruct-Turbo",
             messages=[{"role": "user", "content": prompt}],
@@ -26,22 +34,28 @@ def generate_pred_conf_explanations(data, output_dir="../data/llm_responses"):
         try:
             json_res = json.loads(res)
         except json.JSONDecodeError as e:
-            print(f"Error decoding JSON for node {i}: {e}")
-            json_res = {"error": "Invalid JSON response", "node_index": i, "raw_response": res}
+            print(f"Error decoding JSON for node {node_id}: {e}")
+            json_res = {"error": "Invalid JSON response", "node_id": node_id, "raw_response": res}
         
-        # Define a unique filename for each JSON response
-        file_name = f"response_node_{i}.json"
-        file_path = os.path.join(output_dir, file_name)
-        
-        # Save the response as a JSON file
-        with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(json_res, f, ensure_ascii=False, indent=4)
+        # Store response using the actual node ID
+        results[f"{node_id}"] = json_res
 
-    print(f"All responses saved in '{output_dir}'")
+    # Save all responses in a single JSON file
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=4)
 
-if __name__ == "main":
-    # for now the original data but later it must change to the sample data
-    data = get_dataset("../../goodreads_data/goodreads_crime/processed/crime.pkl")
-    generate_pred_conf_explanations(data=data)
+    print(f"All responses saved in '{output_path}'")
+
+if __name__ == "__main__":
+    # Load data from products
+    data, texts = get_products("../data/subgraph_data.pt", "../data/subgraph_texts.csv")
+    
+    # Limit to the first 5 nodes
+    data.n_id = data.n_id[:5]
+    texts = texts[:5]
+
+    # Run the function on a small subset
+    generate_pred_conf_explanations(data=data, texts=texts)
+
         
 
