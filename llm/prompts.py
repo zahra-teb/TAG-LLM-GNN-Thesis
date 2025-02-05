@@ -13,7 +13,8 @@ The final output format must be ONLY a JSON object as follows:
 
 ZERO_SHOT_PRODUCTS_PROMPT = """
 Product description: {description} \n Question: Which of the following category does this product belong to: 1) Home & Kitchen, 2) Health & Personal Care, 3) Beauty, 4) Sports & Outdoors, 5) Books, 6) Patio, Lawn & Garden, 7) Toys & Games, 8) CDs & Vinyl, 9) Cell Phones & Accessories, 10) Grocery & Gourmet Food, 11) Arts, Crafts & Sewing, 12) Clothing, Shoes & Jewelry, 13) Electronics, 14) Movies & TV, 15) Software, 16) Video Games, 17) Automotive, 18) Pet Supplies, 19) Office Products, 20) Industrial & Scientific, 21) Musical Instruments, 22) Tools & Home Improvement, 23) Magazine Subscriptions, 24) Baby Products, 25) NAN, 26) Appliances, 27) Kitchen & Dining, 28) Collectibles & Fine Art, 29) All Beauty, 30) Luxury Beauty, 31) Amazon Fashion, 32) Computers, 33) All Electronics, 34) Purchase Circles, 35) MP3 Players & Accessories, 36) Gift Cards, 37) Office & School Supplies, 38) Home Improvement, 39) Camera & Photo, 40) GPS & Navigation, 41) Digital Music, 42) Car Electronics, 43) Baby, 44) Kindle Store, 45) Kindle Apps, 46) Furniture & Decor? 
-Give 5 likely categories as a comma-separated list ordered from most to least likely with a confidence ranging from 0 to 100 in the form of a list python dicts like [{{"category:":<answer_here>, "confidence": <confidence_here>}}, ...]. The sum of confidences must equal to 100.
+Give at most 3 likely categories as a comma-separated list ordered from most to least likely with a confidence ranging from 0 to 100 in the form of a list python dicts like [{{"category:":<answer_here>, "confidence": <confidence_here>}}, ...]. The sum of confidences must equal to 100.
+The categories you predict must not contain any number, just the cateory itself.
 You also must provide your reasoning.
 The final output format MUST be a JSON object as follows:
 {{
