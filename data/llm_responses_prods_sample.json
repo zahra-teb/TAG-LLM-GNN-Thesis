@@ -3,125 +3,85 @@
         "cats_and_confs": [
             {
                 "category": "Toys & Games",
-                "confidence": 60
+                "confidence": 80
             },
             {
                 "category": "Baby Products",
-                "confidence": 20
+                "confidence": 15
             },
             {
                 "category": "Sports & Outdoors",
-                "confidence": 10
-            },
-            {
-                "category": "Home & Kitchen",
-                "confidence": 5
-            },
-            {
-                "category": "Patio, Lawn & Garden",
                 "confidence": 5
             }
         ],
-        "reasoning": "The product is a swimming toy for kids, which suggests it belongs to the Toys & Games category. The product description also mentions it's suitable for the pool or bath tub, which could relate to Baby Products. The other categories are less likely but still possible due to the product's outdoor and recreational nature."
+        "reasoning": "The product is a swimming toy for kids, which suggests it belongs to the Toys & Games category. The product description also mentions it's suitable for little ones, which could relate to Baby Products. Additionally, since it's used in pools, it could be tangentially related to Sports & Outdoors, but this connection is less direct."
     },
     "165231": {
         "cats_and_confs": [
             {
-                "category": "37) Office & School Supplies",
+                "category": "Office & School Supplies",
                 "confidence": 60
             },
             {
-                "category": "19) Office Products",
-                "confidence": 20
+                "category": "Arts, Crafts & Sewing",
+                "confidence": 30
             },
             {
-                "category": "11) Arts, Crafts & Sewing",
+                "category": "Toys & Games",
                 "confidence": 10
-            },
-            {
-                "category": "41) Digital Music",
-                "confidence": 5
-            },
-            {
-                "category": "45) Kindle Apps",
-                "confidence": 5
             }
         ],
-        "reasoning": "The product description mentions \"bulletin boards\", \"signs\", \"news boards\", \"showcases\", \"student work displays\", and \"alphabet learning activities\", which are all related to educational settings, making Office & School Supplies the most likely category. The mention of \"contemporary styles\", \"bright colors\", and \"fun patterns\" also suggests a connection to Arts, Crafts & Sewing, but to a lesser extent. Office Products is also a possible category due to the product's reusable and durable nature. The other categories have very low confidence as they are not directly related to the product's description."
+        "reasoning": "The product description mentions the use of the product for educational purposes such as alphabet learning activities, student work displays, and bulletin boards, which suggests a strong connection to Office & School Supplies. The product's creative and colorful nature also relates to Arts, Crafts & Sewing. Additionally, the product's playful and fun patterns could also categorize it under Toys & Games, although to a lesser extent."
     },
     "1574912": {
         "cats_and_confs": [
             {
-                "category": "8) CDs & Vinyl",
-                "confidence": 80
+                "category": "CDs & Vinyl",
+                "confidence": 90
             },
             {
-                "category": "41) Digital Music",
-                "confidence": 10
-            },
-            {
-                "category": "21) Musical Instruments",
+                "category": "Digital Music",
                 "confidence": 5
             },
             {
-                "category": "14) Movies & TV",
-                "confidence": 3
-            },
-            {
-                "category": "42) Car Electronics",
-                "confidence": 2
+                "category": "Musical Instruments",
+                "confidence": 5
             }
         ],
-        "reasoning": "The product is described as a Compact Disk with a genre of Reggae Music, which suggests it belongs to a music category. CDs & Vinyl is the most likely category as it directly matches the product's media format. Digital Music is also a possibility as it relates to music, but it's less likely since the product is a physical CD. Musical Instruments is a distant possibility as some music products may include instruments, but it's not directly related to the product description. Movies & TV and Car Electronics are even less likely as they don't relate to music or CDs."
+        "reasoning": "The product is described as a Compact Disk with a genre of Reggae Music, which suggests it belongs to a music-related category. CDs & Vinyl is the most likely category as it directly matches the product's media format. Digital Music and Musical Instruments are less likely but still possible as they are related to music."
     },
     "957874": {
         "cats_and_confs": [
             {
-                "category": "13) Electronics",
-                "confidence": 60
+                "category": "Electronics",
+                "confidence": 80
             },
             {
-                "category": "33) All Electronics",
-                "confidence": 20
+                "category": "Cell Phones & Accessories",
+                "confidence": 15
             },
             {
-                "category": "9) Cell Phones & Accessories",
-                "confidence": 10
-            },
-            {
-                "category": "40) GPS & Navigation",
-                "confidence": 5
-            },
-            {
-                "category": "32) Computers",
+                "category": "Car Electronics",
                 "confidence": 5
             }
         ],
-        "reasoning": "The product is a handheld transceiver antenna, which is an electronic device used for communication. The description mentions it fits directly on amateur handheld radios and scanners, indicating it's an electronic accessory. The categories 'Electronics' and 'All Electronics' are the most relevant, followed by 'Cell Phones & Accessories' due to the SMA connector, which is also used in some cell phone accessories. The categories 'GPS & Navigation' and 'Computers' are less relevant but still possible due to the product's electronic nature."
+        "reasoning": "The product is described as a handheld transceiver antenna, which suggests it is an electronic device used for communication. The mention of specific connectors and compatibility with various radio brands further supports this categorization. The connection to cell phones and car electronics is less direct but still plausible due to the nature of the product as an accessory for communication devices."
     },
     "898303": {
         "cats_and_confs": [
             {
-                "category": "14) Movies & TV",
-                "confidence": 60
+                "category": "Movies & TV",
+                "confidence": 80
             },
             {
-                "category": "28) Collectibles & Fine Art",
-                "confidence": 20
+                "category": "Collectibles & Fine Art",
+                "confidence": 15
             },
             {
-                "category": "11) Arts, Crafts & Sewing",
-                "confidence": 10
-            },
-            {
-                "category": "46) Furniture & Decor",
-                "confidence": 5
-            },
-            {
-                "category": "32) Computers",
+                "category": "Arts, Crafts & Sewing",
                 "confidence": 5
             }
         ],
-        "reasoning": "The product is a movie poster, which is directly related to the movie industry, making '14) Movies & TV' the most likely category. '28) Collectibles & Fine Art' is also a strong candidate since posters can be considered collectibles. '11) Arts, Crafts & Sewing' is a possible category due to the artistic nature of posters. The other categories have lower confidence as they are less directly related to the product."
+        "reasoning": "The product is a movie poster, which is a common item in the Movies & TV category. The high quality and framing suggestion also make it suitable for Collectibles & Fine Art. Additionally, the poster could be used as a material for arts and crafts projects, hence the minor confidence in Arts, Crafts & Sewing."
     }
 }
