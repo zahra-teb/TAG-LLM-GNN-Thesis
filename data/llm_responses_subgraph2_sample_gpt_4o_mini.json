@@ -1,0 +1,65 @@
+{
+    "1809": {
+        "cat_and_conf": {
+            "category:": "Books",
+            "confidence": 90
+        },
+        "reasoning": "The product 'San Diego Then and Now' suggests it is likely a book that compares historical and contemporary images or information about San Diego, which fits well within the 'Books' category."
+    },
+    "2031": {
+        "cat_and_conf": {
+            "category:": "CDs & Vinyl",
+            "confidence": 95
+        },
+        "reasoning": "The product is a CD of Lacy J. Dalton's Greatest Hits, which clearly falls under the category of music formats, specifically CDs and vinyl records."
+    },
+    "542": {
+        "cat_and_conf": {
+            "category:": "Books",
+            "confidence": 95
+        },
+        "reasoning": "The product 'Cam Jansen: The Mystery of the Carnival Prize #9' is a book, specifically a children's mystery book series, which clearly places it in the 'Books' category."
+    },
+    "1547": {
+        "cat_and_conf": {
+            "category:": "Beauty",
+            "confidence": 90
+        },
+        "reasoning": "The Schick Hydro Silk for Women Razor is primarily used for personal grooming and skincare, which aligns it closely with the Beauty category. While it could also fit under Health & Personal Care, the specific focus on beauty and aesthetics in the product name suggests a stronger association with the Beauty category."
+    },
+    "1336": {
+        "cat_and_conf": {
+            "category:": "Movies & TV",
+            "confidence": 85
+        },
+        "reasoning": "The title 'Guess Who's Coming to Dinner' is a well-known film, which suggests that the product is likely related to movies or television. Therefore, the most appropriate category is 'Movies & TV'."
+    },
+    "1715": {
+        "cat_and_conf": {
+            "category:": "CDs & Vinyl",
+            "confidence": 90
+        },
+        "reasoning": "The product 'Ultimate Gospel Collection' suggests it is a music compilation, which typically falls under the category of CDs & Vinyl."
+    },
+    "2256": {
+        "cat_and_conf": {
+            "category:": "NAN",
+            "confidence": 100
+        },
+        "reasoning": "The product description does not provide any specific information about the product, leading to the conclusion that it falls under the 'NAN' category."
+    },
+    "342": {
+        "cat_and_conf": {
+            "category:": "Health & Personal Care",
+            "confidence": 95
+        },
+        "reasoning": "FocusFactor Focus Factor For Kids is a dietary supplement aimed at children's health, which places it squarely in the Health & Personal Care category."
+    },
+    "1227": {
+        "cat_and_conf": {
+            "category:": "Collectibles & Fine Art",
+            "confidence": 85
+        },
+        "reasoning": "The product 'Wolf & Leopards' likely refers to artwork or collectibles featuring these animals, which fits well within the 'Collectibles & Fine Art' category."
+    }
+}

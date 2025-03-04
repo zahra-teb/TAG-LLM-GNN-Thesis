@@ -1,0 +1,65 @@
+{
+    "1809": {
+        "cat_and_conf": {
+            "category": "Books",
+            "confidence": 95
+        },
+        "reasoning": "The product description 'San Diego Then and Now' suggests a historical or informational book about San Diego, which falls under the category of Books."
+    },
+    "2031": {
+        "cat_and_conf": {
+            "category": "CDs & Vinyl",
+            "confidence": 100
+        },
+        "reasoning": "The product description explicitly mentions 'cd' which directly corresponds to the category 'CDs & Vinyl', making it the most likely category with absolute confidence."
+    },
+    "542": {
+        "cat_and_conf": {
+            "category": "Books",
+            "confidence": 100
+        },
+        "reasoning": "The product description mentions 'Cam Jansen: The Mystery of the Carnival Prize #9', which is a book title, indicating that the product belongs to the 'Books' category."
+    },
+    "1547": {
+        "cat_and_conf": {
+            "category": "Health & Personal Care",
+            "confidence": 95
+        },
+        "reasoning": "The product Schick Hydro Silk for Women Razor is a personal care item used for shaving, which falls under the category of Health & Personal Care. This category includes products related to personal hygiene and grooming, making it the most suitable choice for this product."
+    },
+    "1336": {
+        "cat_and_conf": {
+            "category": "Movies & TV",
+            "confidence": 90
+        },
+        "reasoning": "The product title 'Guess Who's Coming to Dinner' is a well-known movie title, which suggests that the product is a DVD or digital copy of the film, making 'Movies & TV' the most likely category."
+    },
+    "1715": {
+        "cat_and_conf": {
+            "category": "CDs & Vinyl",
+            "confidence": 90
+        },
+        "reasoning": "The product is called 'Ultimate Gospel Collection' which suggests it is a music collection, and the most likely category for music collections is 'CDs & Vinyl'."
+    },
+    "2256": {
+        "cat_and_conf": {
+            "category": "Health & Personal Care",
+            "confidence": 80
+        },
+        "reasoning": "The product name 'Baldhead Bridge' suggests a product related to hair loss or baldness, which is a common issue in personal care and health. Although the description is empty, the name itself gives a strong indication of the product's category."
+    },
+    "342": {
+        "cat_and_conf": {
+            "category": "Health & Personal Care",
+            "confidence": 95
+        },
+        "reasoning": "The product name 'FocusFactor Focus Factor For Kids' suggests that it is a dietary supplement, which falls under the category of Health & Personal Care. The product description also implies that it is a health-related product, which further supports this categorization."
+    },
+    "1227": {
+        "cat_and_conf": {
+            "category": "Toys & Games",
+            "confidence": 60
+        },
+        "reasoning": "The product name 'Wolf & Leopards' suggests it could be a toy or game, possibly a figurine or board game, which is why I've chosen the 'Toys & Games' category. However, without more information, the confidence level is not extremely high."
+    }
+}
